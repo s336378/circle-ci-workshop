@@ -11,7 +11,7 @@ jobs:
        - store_test_results:
           path: build/test-results
        - store_artifacts:
-          path: code/test-results
+          path: tmp/test-results
           destination: prefix 
           #echo 'Hello World!'
             #echo 'This is the delivery pipeline'

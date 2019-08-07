@@ -12,6 +12,12 @@ jobs:
           path: build/test-results
        - store_artifacts:
           path: build/test-results
-          destination: prefix 
+          destination: prefix
+     workflows:
+          version: 2
+          two_job_flow:
+    jobs:
+       - job-1
+       - job-2
           #echo 'Hello World!'
             #echo 'This is the delivery pipeline'
